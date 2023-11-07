@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/htf-landing-page-final/static/css/main.e2cf450b.css",
+    "main.css": "/htf-landing-page-final/static/css/main.5578b114.css",
     "main.js": "/htf-landing-page-final/static/js/main.edcad769.js",
     "index.html": "/htf-landing-page-final/index.html",
-    "main.e2cf450b.css.map": "/htf-landing-page-final/static/css/main.e2cf450b.css.map",
+    "main.5578b114.css.map": "/htf-landing-page-final/static/css/main.5578b114.css.map",
     "main.edcad769.js.map": "/htf-landing-page-final/static/js/main.edcad769.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2cf450b.css",
+    "static/css/main.5578b114.css",
     "static/js/main.edcad769.js"
   ]
 }
