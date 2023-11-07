@@ -1,0 +1,172 @@
+.services {
+  height: auto;
+  width: 100%;
+  background-color: #252c36;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.services--header {
+  color: var(--white);
+  font-family: "Poppins", Helvetica;
+  font-size: 2.8rem;
+  font-weight: 700;
+  width: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.services--top {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  max-width: 70rem;
+  width: 100%;
+  margin: 0 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.services--group {
+  background-color: var(--black);
+  border: 3px solid var(--grey-border);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  overflow: hidden;
+  width: calc(33.33% - 1rem);
+  padding: 1rem;
+  min-width: 300px;
+}
+
+.services--title {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.img-2 {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.services--title > h2 {
+  color: var(--orange-accent);
+  font-family: "Roboto", Helvetica;
+  font-size: 2.125rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.services--group > p {
+  color: var(--grey-text);
+  font-family: "Roboto", Helvetica;
+  font-size: 1.25rem;
+  font-weight: 700;
+  height: 5rem;
+  text-align: center;
+  width: 16.875rem;
+  margin-bottom: 2rem;
+}
+
+.services--tailored {
+  align-items: center;
+  background-color: var(--black);
+  border: 3px solid var(--grey-border);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow: hidden;
+  max-width: 70rem;
+  width: 100%;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  min-width: 300px;
+}
+
+.services--tailored > h2 {
+  color: var(--white);
+  font-family: "Roboto", Helvetica;
+  font-size: 2.5rem;
+  font-weight: 700;
+  height: auto;
+  white-space: nowrap;
+  width: 18.75rem;
+  margin-top: 1rem;
+}
+
+.services--tailored > p {
+  color: var(--grey-text);
+  font-family: "Roboto", Helvetica;
+  font-size: 1.25rem;
+  font-weight: 700;
+  height: auto;
+  text-align: center;
+  width: auto;
+  margin-top: 0;
+}
+
+/* Default Desktop Styles: No changes, as the CSS you've provided will act as the default */
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .steps--container {
+    flex-direction: column; /* Stack container elements vertically */
+  }
+
+  .HTF-platform-image {
+    max-width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* Center the image */
+  }
+
+  .steps--left-copy {
+    text-align: center; /* Center the copy text */
+  }
+
+  .steps--right-group {
+    align-items: center; /* Center the contents of each step group */
+  }
+  .services--group {
+    width: 90%;
+  }
+  .services--group > p {
+    width: 80%;
+    margin-bottom: 0rem;
+  }
+  .services--tailored {
+    width: 90%;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .steps--container {
+    padding: 1rem; /* Introduce a bit of padding on mobile for breathing space */
+  }
+
+  .HTF-platform-image {
+    max-width: 100%; /* Allow image to take full width */
+  }
+
+  .steps--left,
+  .steps--right {
+    width: 100%; /* Full width to elements */
+  }
+
+  .steps--right-group {
+    align-items: center; /* Keep items centered */
+  }
+}

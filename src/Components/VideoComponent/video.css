@@ -1,0 +1,62 @@
+.video {
+  width: 100%;
+  background-color: #252c36;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video--container {
+  max-width: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 4rem 2rem 4rem 2rem;
+}
+
+.video--title {
+  color: var(--white);
+  font-family: "Poppins", Helvetica;
+  font-size: 2.8rem;
+  font-weight: 700;
+  width: auto;
+  white-space: nowrap;
+  margin-bottom: 2rem;
+}
+
+.video--screen {
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .video--container {
+    max-width: 60rem;
+  }
+
+  .video--title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .video--container {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .video--title {
+    font-size: 1.875rem;
+    white-space: normal; /* Allowing title to wrap on mobile */
+    text-align: center; /* Centering the title */
+  }
+
+  .video--screen {
+    width: 100%;
+  }
+}

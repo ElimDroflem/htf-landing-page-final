@@ -1,0 +1,197 @@
+.steps {
+  height: auto;
+  width: 100%;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.steps--container {
+  width: 100%;
+  max-width: 70rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0 2rem;
+}
+
+.steps--left {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.steps--right {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.steps--left-img {
+  height: 4.688rem;
+  width: 90rem;
+}
+
+.steps--left-copy {
+  display: flex;
+  flex-direction: column;
+  height: 9.5rem;
+  margin-bottom: 7rem;
+}
+
+.steps--left-copy > h2 {
+  color: var(--white);
+  font-family: "Poppins", Helvetica;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 2.8rem;
+  width: 14rem;
+}
+
+.steps--left-copy > p {
+  color: var(--white);
+  font-family: "Poppins", Helvetica;
+  font-size: 1.5rem;
+  font-weight: 400;
+  height: 7rem;
+  width: 30rem;
+}
+
+.HTF-platform-image {
+  height: auto;
+  object-fit: cover;
+  width: 50vw;
+  max-width: 40.625rem;
+  position: relative;
+  transform: translate(-10%, -10%);
+  margin-left: 2rem;
+}
+
+.steps--right-title {
+  color: var(--white);
+  font-family: "Roboto", Helvetica;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 1.5rem;
+  white-space: nowrap;
+  width: auto;
+}
+
+.steps--right-text {
+  color: var(--grey-text);
+  font-family: "Roboto", Helvetica;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 2.5rem;
+  width: 19rem;
+}
+
+.img {
+  height: 2.375rem;
+  width: 2.375rem;
+}
+
+.line {
+  height: 2px;
+  width: 22.313rem;
+  margin: 1rem 0;
+}
+
+.steps--right-group {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.steps--right-group:hover {
+  transform: translateY(-1.2rem);
+  transition: transform 0.4s ease;
+}
+
+/* Global Variables for Responsive Design */
+:root {
+  --tablet: 768px;
+  --mobile: 480px; /* Considering smallest size as 320px but adding some buffer */
+}
+
+/* Tablet */
+@media only screen and (max-width: 1023px) {
+  .steps--container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .steps--left,
+  .steps--right {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .steps--left-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .HTF-platform-image {
+    display: none;
+  }
+
+  .steps--right-group {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img {
+    order: -1; /* This will place image before the title */
+    margin-right: 1rem;
+  }
+
+  .line {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .steps {
+    gap: 2rem;
+    padding: 1rem 0; /* Add some top and bottom padding */
+  }
+
+  .steps--left-copy > h2 {
+    font-size: 1.75rem;
+  }
+
+  .steps--left-copy > p,
+  .steps--right-title,
+  .steps--right-text {
+    width: 90%; /* Slight adjustment for mobile screens */
+  }
+
+  .steps--right-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .HTF-platform-image {
+    display: none;
+  }
+}
