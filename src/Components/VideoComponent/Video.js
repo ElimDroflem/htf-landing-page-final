@@ -10,10 +10,10 @@ const Video = () => {
         <video
           className="video--screen"
           controls
-          poster="/img/video-screen.png"
+          poster={`${process.env.PUBLIC_URL}/img/video-screen.png`}
         >
           <source
-            src="/video/coverr-premium-ai-generated-autumn-serenity-by-the-lake-6371-1080p-w.mp4"
+            src={`${process.env.PUBLIC_URL}/video/coverr-premium-ai-generated-autumn-serenity-by-the-lake-6371-1080p-w.mp4`}
             type="video/mp4"
           />
           Your browser does not support the video tag.

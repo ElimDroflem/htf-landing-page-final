@@ -21,7 +21,11 @@ const Hdao = () => {
           </p>
         </div>
 
-        <img className="hdao--img" alt="Hdao img" src="/img/hdao-img.png" />
+        <img
+          className="hdao--img"
+          alt="Hdao img"
+          src={`${process.env.PUBLIC_URL}/img/hdao-img.png`}
+        />
       </div>
     </div>
   );

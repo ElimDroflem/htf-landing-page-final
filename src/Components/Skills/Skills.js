@@ -5,21 +5,21 @@ import ServiceBox from "../ServicesComponent/SubComponents/ServiceBox";
 
 const skillsData = [
   {
-    imgSrc: "/img/new-person.svg",
+    imgSrc: `${process.env.PUBLIC_URL}/img/new-person.svg`,
     altText: "Vector",
     title: "Growth",
     description:
       "We scout intelligent individuals from underserved communities.",
   },
   {
-    imgSrc: "/img/money.svg",
+    imgSrc: `${process.env.PUBLIC_URL}/img/money.svg`,
     altText: "Vector",
     title: "Income",
     description:
       "Task completion on our platform generates revenue for Assistants.",
   },
   {
-    imgSrc: "/img/degree-hat.png",
+    imgSrc: `${process.env.PUBLIC_URL}/img/degree-hat.png`,
     altText: "Mdi university",
     title: "Upskill",
     description:

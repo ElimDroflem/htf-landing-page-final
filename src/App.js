@@ -13,12 +13,12 @@ import "./style.css";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/htf-landing-page-final">
       <div className="desktop">
         <Navbar />
         <Routes>
           <Route
-            path="/htf-landing-page"
+            path="/"
             element={
               <>
                 <Header />

@@ -32,7 +32,7 @@ const Header = () => {
           <img
             className="header--image"
             alt="Header"
-            src="/img/header-image.png"
+            src={`${process.env.PUBLIC_URL}/img/header-image.png`}
           />
         </div>
       </div>

@@ -71,7 +71,7 @@ const Navbar = () => {
         </button>
         <div className="nav--links desktop-links">
           <NavLink to="https://humandao.org/" label="Dao" isExternal={true} />
-          <NavLink to="/htf-landing-page" label="Home" /> {/* Updated path */}
+          <NavLink to="/" label="Home" /> {/* Updated path */}
           <NavLink to="/contact" label="Contact" />
         </div>
         <div
@@ -80,7 +80,7 @@ const Navbar = () => {
         >
           <div className="nav--links mobile-links">
             <NavLink to="https://humandao.org/" label="Dao" isExternal={true} />
-            <NavLink to="/htf-landing-page" label="Home" /> {/* Updated path */}
+            <NavLink to="/" label="Home" /> {/* Updated path */}
             <NavLink to="/contact" label="Contact" />
           </div>
         </div>
