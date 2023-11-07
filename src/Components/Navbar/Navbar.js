@@ -67,7 +67,10 @@ const Navbar = () => {
           className="burger"
           onClick={() => setShowLinks(!showLinks)}
         >
-          <img src="/img/burger-menu.png" alt="Menu" />
+          <img
+            src={`${process.env.PUBLIC_URL}/img/burger-menu.png`}
+            alt="Menu"
+          />
         </button>
         <div className="nav--links desktop-links">
           <NavLink to="https://humandao.org/" label="Dao" isExternal={true} />
