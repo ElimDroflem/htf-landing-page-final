@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  margin: 0 1rem;
 }
 
 .hdao--container--left {
@@ -26,7 +27,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 
 .hdao--title {
@@ -56,16 +57,15 @@
     padding: 2rem;
     min-width: auto;
     justify-content: center;
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .hdao--container--left {
-    max-width: 80%;
-  }
-
-  .hdao--container--left {
+    max-width: 100%;
     margin-left: 0;
     align-items: start;
+    display: flex;
+    align-items: center;
   }
 
   .hdao--title,
@@ -84,7 +84,7 @@
 
   .hdao--img {
     margin-top: 2rem;
-    max-width: 80%;
+    max-width: 100%;
     width: auto;
     align-self: center;
   }
@@ -93,7 +93,7 @@
 /* Mobile */
 @media (max-width: 768px) {
   .hdao--container {
-    padding: 1rem;
+    /* padding: 1rem; */
   }
 
   .hdao--title {

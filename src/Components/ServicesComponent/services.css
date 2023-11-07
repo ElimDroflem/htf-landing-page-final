@@ -17,6 +17,7 @@
   width: auto;
   margin-top: 4rem;
   margin-bottom: 1rem;
+  margin: 0 3rem;
   text-align: center;
 }
 
@@ -128,6 +129,16 @@
     flex-direction: column; /* Stack container elements vertically */
   }
 
+  .services--top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services--header {
+    margin: 3rem 0rem;
+  }
+
   .HTF-platform-image {
     max-width: 80%; /* Adjust as needed */
     margin: 0 auto; /* Center the image */
@@ -141,14 +152,14 @@
     align-items: center; /* Center the contents of each step group */
   }
   .services--group {
-    width: 90%;
+    width: 100%;
   }
   .services--group > p {
     width: 80%;
-    margin-bottom: 0rem;
+    height: auto;
   }
   .services--tailored {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -169,5 +180,29 @@
 
   .steps--right-group {
     align-items: center; /* Keep items centered */
+  }
+
+  .services--group > h2 {
+    font-size: 1.5rem;
+  }
+  .services--group > p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .services--tailored {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .services--tailored > h2 {
+    font-size: 2rem;
+  }
+
+  .services--tailored > p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
   }
 }

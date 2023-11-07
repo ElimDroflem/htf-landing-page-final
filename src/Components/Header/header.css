@@ -80,12 +80,13 @@
   .header .button--main {
     margin-top: 2rem;
   }
+
   .header--group--copy {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     max-width: 80%;
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
     margin-top: 3rem;
   }
 
