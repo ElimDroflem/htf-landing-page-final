@@ -54,7 +54,11 @@ const Steps = () => {
             </p>
           </div>
           {/* second line */}
-          src={`${process.env.PUBLIC_URL}/img/line-1.svg`}
+          <img
+            className="line"
+            alt="Line"
+            src={`${process.env.PUBLIC_URL}/img/line-1.svg`}
+          />
           {/* third step */}
           <div className="steps--right-group">
             <div className="steps--right-title">Step 3: Achieve Excellence</div>
